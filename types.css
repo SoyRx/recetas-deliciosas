@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #e1f5fe;
+    font-family: 'Courier New', monospace;
+}
+header{
+    background-color: #ffab40;
+    color: #ffff;
+    text-align: center;
+    padding: 2em;
+    margin-bottom: 1em;
+}
+header ul{
+    display: flex;
+    list-style-type: none;
+}
+header li{
+    margin-right: 10px;
+}
+header a{
+    color: #ffff;
+}
+section{
+    background-color: #ffff;
+    max-width: 95%;
+    border-radius: 4px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 10px;
+    margin: auto; /*pone el section en el medio*/
+    margin-bottom: 2em;
+    border: 2px dashed #ffab40;
+    transition: 0.5s;
+    /*puedo poner un display:flex; y un margin: 45% para que esté un poco más ordenado y no sea tanto caos con los desplegables del hover*/
+}
+.no_mostrar{
+    visibility: hidden; /* Oculta visualmente el elemento */
+    height: 0; /* Altura inicial en 0 para ocultarlo */
+    overflow: hidden; /* Oculta el contenido */
+    transform: translateY(10px);
+    transition: 0.5s;
+}
+.mostrar:hover .no_mostrar{
+    visibility: visible; /* Asegura que el elemento sea visible */
+    height: auto; /* Permite que el contenido tome su altura */
+    transform: translateY(0);
+    transition: 0.5s;
+}
+section h2{
+    margin-top: 0.5em;
+    margin-bottom: 1em;
+}
+section p{
+    margin-bottom: 0.5em;
+}
+section li{
+    margin-bottom: 0.5em;
+}
+div ul{
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
