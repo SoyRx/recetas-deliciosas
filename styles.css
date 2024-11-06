@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #ffff;
+    font-family: 'Nunito Sans';
+}
+header{
+    display: flex;
+    padding-top: 2em;
+    background-color: hsla(0, 0%, 100%, .95);
+    box-shadow: 25px 26px 35px 5px transparent;
+    left: 0;
+    position: fixed;
+    top: 0;
+    transition: all .3s;
+    width: 100%;
+    box-shadow: 3px 1px 10px #e2e2e2;
+}
+header img{
+    width: 100px;
+    margin-top: -2em;
+}
+header img:hover{
+    height: 230px;
+    object-fit: cover;
+    object-position: center;
+    transform: scale(1.2);
+    transition: all .3s;
+    width: 100%;
+}
+header ul{
+    display: flex;
+    list-style-type: none;
+    margin: auto;
+    padding-top: -2em;
+}
+header li{
+    margin-right: 40px;
+}
+.container{
+    margin-bottom: 7em;
+}
+a{
+    color: black;
+    text-decoration: none;
+}
+.enter{
+    background-color: #ffff;
+    max-width: 50%;
+    text-align: center;
+    border-radius: 4px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: auto; /*pone el section en el medio*/
+    transition: 0.5s;
+}
+.comida{
+    background-color: #ffff;
+    max-width: 35%;
+    border-radius: 4px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 100px;
+    padding-right: 100px;
+    margin: auto; /*pone el section en el medio*/
+    transition: 0.5s;
+    text-align: center;
+}
+section:hover{
+    transition: 0.5s;
+    transform:translateY(-6px);
+}
+section h2{
+    margin-top: 1.5em;
+    margin-bottom: 1em;
+}
+section h1{
+    padding: 20px;
+}
+section p{
+    margin-bottom: 0.5em;
+}
+.comidas{
+    display: grid;
+    background-color: #fff9f9;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    max-width: 90%;
+    margin: auto;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+section img{
+    width: 100%;
+    padding-top: 1em;
+    border-radius: 5px;
+}
