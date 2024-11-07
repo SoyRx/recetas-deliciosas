@@ -1,0 +1,225 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #ffff;
+    font-family: 'Nunito Sans';
+}
+header{
+    display: flex;
+    padding-top: 2em;
+    background-color: hsla(0, 0%, 100%, .95);
+    position: fixed;
+    top: 0;
+    transition: all .3s;
+    width: 100%;
+    box-shadow: 3px 1px 10px #e2e2e2;
+    z-index: 1; /*posiciona al header por encima de los otros elementos, cuanto mayor es el z-index de un elemento se pondrá por encima de los elementos que tengan un z-index menor*/
+}
+header img{
+    width: 100px;
+    margin-top: -2em;
+}
+header img:hover{
+    height: 230px;
+    object-fit: cover;
+    object-position: center;
+    transform: scale(1.2);
+    transition: all .3s;
+    width: 100%;
+}
+header ul{
+    display: flex;
+    list-style-type: none;
+    margin: auto;
+    padding-top: -2em;
+}
+header li{
+    margin-right: 40px;
+}
+.container{
+    margin-bottom: 7em;
+}
+a{
+    color: black;
+    text-decoration: none;
+}
+.enter{
+    background-color: #ffff;
+    max-width: 50%;
+    text-align: center;
+    border-radius: 4px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: auto; /*pone el section en el medio*/
+    transition: 0.5s;
+}
+.comida{
+    background-color: #ffff;
+    max-width: 45%;
+    border-radius: 4px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 100px;
+    padding-right: 100px;
+    margin: auto; /*pone el section en el medio*/
+    transition: 0.5s;
+    text-align: center;
+}
+.enter:hover{
+    transition: 0.5s;
+    transform:translateY(-6px);
+}
+section h2{
+    margin-top: 1.5em;
+    margin-bottom: 1em;
+}
+section h1{
+    padding: 20px;
+}
+section p{
+    margin-bottom: 0.5em;
+}
+.ingredientes{
+    display: grid;
+    background-color: #fff9f9;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    max-width: 90%;
+    margin: auto;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+.intro{
+    background-color: #fff9f9;
+    max-width: 45%;
+    border-radius: 4px;
+    padding-top: 20px;
+    padding-bottom: 200px;
+    padding-left: 100px;
+    padding-right: 100px;
+    margin: auto; /*pone el section en el medio*/
+}
+.left{
+    margin-top: 2em;
+    max-width: 55%;
+    display: flex;
+    flex-direction: column;
+    float: left;
+    height: 100%;
+}
+.right{
+    margin-top: 2em;
+    max-width: 55%;
+    display: flex;
+    flex-direction: column;
+    float: right;
+    height: 100%;
+}
+.linea{
+    border: 2px solid #e2e2e2;
+}
+/* --------------------------------------
+    Media Queries para hacerlo responsive
+-------------------------------------- */
+
+/* Para dispositivos con pantallas de hasta 768px (tablet en formato retrato o móviles más grandes) */
+@media screen and (max-width: 768px) {
+    /* Header: Cambiar la disposición para pantallas más pequeñas */
+    header {
+        flex-direction: column;
+        align-items: center;
+        padding-top: 1em;
+    }
+
+    header img {
+        width: 80px;
+        margin-top: 0;
+    }
+
+    header ul {
+        flex-direction: column;
+        margin-top: 1em;
+        align-items: center;
+    }
+
+    header li {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+    .container{
+        margin-bottom: 14em;
+    }
+
+    /* Hacer más grande el formulario .enter en dispositivos más pequeños */
+    .enter {
+        max-width: 80%;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    /* Hacer el formulario .comida más pequeño */
+    .comida {
+        max-width: 80%;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    /* Cambiar el diseño de la grilla .comidas para pantallas más pequeñas */
+    .comidas {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+}
+
+/* Para dispositivos más pequeños, como teléfonos con pantallas de hasta 480px */
+@media screen and (max-width: 480px) {
+    /* Header: Cambiar la imagen y el menú para pantallas muy pequeñas */
+    header img {
+        width: 70px;
+    }
+
+    header ul {
+        font-size: 14px;
+    }
+
+    header li {
+        margin-bottom: 8px;
+    }
+    .container{
+        margin-bottom: 12em;
+    }
+
+    /* Ajustar el formulario .enter y .comida para pantallas muy pequeñas */
+    .enter {
+        max-width: 90%;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .comida {
+        max-width: 90%;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    /* Cambiar el diseño de la grilla .comidas para una sola columna */
+    .comidas {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    /* Ajustar la imagen dentro de section */
+    section img {
+        width: 100%;
+        height: auto;
+    }
+    .left .right{
+        float: none;
+    }
+}
