@@ -16,24 +16,24 @@ header{
     display: flex;
     padding-top: 2em;
     background-color: hsla(0, 0%, 100%, .95);
-    box-shadow: 25px 26px 35px 5px transparent;
-    left: 0;
     position: fixed;
     top: 0;
     transition: all .3s;
     width: 100%;
     box-shadow: 3px 1px 10px #e2e2e2;
+    z-index: 1;
 }
 header img{
     width: 100px;
     margin-top: -2em;
+    transition: 3s;
 }
 header img:hover{
     height: 230px;
     object-fit: cover;
     object-position: center;
     transform: scale(1.2);
-    transition: all .3s;
+    transition: 3s;
     width: 100%;
 }
 header ul{
@@ -115,4 +115,52 @@ input{
 input:hover{
     transform: translateY(-7px);
     transition: 0.5s;
+}
+@media screen and (max-width: 768px) {
+    /* Ajusta el tamaño del header en pantallas pequeñas */
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Cambia el tamaño de la imagen en el header */
+    header img {
+        width: 80px;
+        margin-top: 0;
+    }
+
+    /* Redefine los enlaces del menú para que estén más apilados */
+    header ul {
+        flex-direction: column;
+        margin-top: 1em;
+    }
+
+    header li {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    /* Ajusta el tamaño del section */
+    section {
+        max-width: 80%; /* Aumenta el ancho del formulario en pantallas pequeñas */
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+/* Media Queries para pantallas aún más pequeñas (como teléfonos muy pequeños) */
+@media screen and (max-width: 480px) {
+    section {
+        max-width: 90%; /* Hacemos el formulario aún más ancho en dispositivos muy pequeños */
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    header img {
+        width: 70px; /* Disminuir aún más el tamaño del logo */
+    }
+
+    header ul {
+        font-size: 14px; /* Reducir tamaño de fuente para el menú */
+    }
 }
