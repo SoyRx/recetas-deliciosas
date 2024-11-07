@@ -26,7 +26,6 @@ header{
 header img{
     width: 100px;
     margin-top: -2em;
-    transition: 3s;
 }
 header img:hover{
     height: 230px;
@@ -54,7 +53,7 @@ a{
 }
 section{
     background-color: #ffff;
-    max-width: 35%;
+    max-width: 45%;
     border-radius: 4px;
     padding-top: 20px;
     padding-bottom: 20px;
@@ -65,8 +64,6 @@ section{
     text-align: center;
     border-radius: 15px;
     box-shadow: 3px 10px 10px #c9d6ff;
-
-
     text-align: center;
     align-items: center;
     display: flex;
@@ -102,8 +99,6 @@ label, input{
     padding: 5px;
     transition: 0.5s;
     min-width: 10em;
-
-
 }
 .boton:hover{
     transition: 0.5s;
@@ -140,18 +135,23 @@ input:hover{
         margin-bottom: 10px;
     }
 
+    .container{
+        margin-bottom: 14em;
+    }
+
     /* Ajusta el tamaño del section */
     section {
         max-width: 80%; /* Aumenta el ancho del formulario en pantallas pequeñas */
         padding-left: 20px;
         padding-right: 20px;
     }
+    
 }
 
 /* Media Queries para pantallas aún más pequeñas (como teléfonos muy pequeños) */
 @media screen and (max-width: 480px) {
     section {
-        max-width: 90%; /* Hacemos el formulario aún más ancho en dispositivos muy pequeños */
+        max-width: 80%; /* Hacemos el formulario aún más ancho en dispositivos muy pequeños */
         padding-left: 15px;
         padding-right: 15px;
     }
@@ -162,5 +162,12 @@ input:hover{
 
     header ul {
         font-size: 14px; /* Reducir tamaño de fuente para el menú */
+    }
+
+    .container{
+        margin-bottom: 60em;
+    }
+    .left, .right {
+        float: none;
     }
 }
