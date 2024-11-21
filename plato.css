@@ -110,7 +110,7 @@ section p{
     margin-right: 1em;
 }
 .sangria{
-    text-indent: 6.8em;
+    text-indent: 8.2em;
 }
 .intro{
     background-color: #fff9f9;
@@ -195,6 +195,10 @@ main{
         margin-bottom: 14em;
     }
 
+    .sangria{
+        text-indent: 4.8em;
+    }
+
     /* Hacer más grande el formulario .enter en dispositivos más pequeños */
     .enter {
         max-width: 80%;
@@ -237,6 +241,10 @@ main{
     .linea{
         width: 200%;
         margin-left: -50%;
+    }
+
+    .sangria{
+        text-indent: 1.2em;
     }
 
     header img {
