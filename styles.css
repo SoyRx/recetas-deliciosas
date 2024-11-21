@@ -6,6 +6,9 @@ body{
     background-color: #ffff;
     font-family: 'Nunito Sans';
 }
+body p,li{
+    font-size: 1.2em;
+}
 header{
     display: flex;
     padding-top: 2em;
@@ -59,12 +62,12 @@ a{
 }
 .comida{
     background-color: #ffff;
-    max-width: 35%;
+    max-width: 45%;
     border-radius: 4px;
     padding-top: 20px;
     padding-bottom: 20px;
-    padding-left: 100px;
-    padding-right: 100px;
+    padding-left: 75px;
+    padding-right: 75px;
     margin: auto; /*pone el section en el medio*/
     transition: 0.5s;
     text-align: center;
@@ -99,6 +102,15 @@ section img{
     width: 100%;
     padding-top: 1em;
     border-radius: 5px;
+}
+footer{
+    width: 100%;
+    margin-top: 2em;
+    margin: auto;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    text-align: center;
+    font-family: source-sans-pro, "Trebuchet MS", Helvetica, sans-serif;;
 }
 /* --------------------------------------
     Media Queries para hacerlo responsive

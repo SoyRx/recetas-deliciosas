@@ -6,6 +6,9 @@ body{
     background-color: #ffff;
     font-family: 'Nunito Sans';
 }
+body p,li{
+    font-size: 1.2em;
+}
 header{
     display: flex;
     padding-top: 2em;
@@ -57,7 +60,7 @@ a{
     margin: auto; /*pone el section en el medio*/
     transition: 0.5s;
 }
-.comida{
+.comida{  /*creo que no vale para nada, no está asignado a nada*/ /*
     background-color: #ffff;
     max-width: 45%;
     border-radius: 4px;
@@ -83,27 +86,42 @@ section h1{
 section p{
     margin-bottom: 0.5em;
 }
-.ingredientes{
+.group{
     display: grid;
     background-color: #fff9f9;
     padding-top: 20px;
     padding-bottom: 20px;
     padding-left: 10px;
     padding-right: 10px;
-    max-width: 90%;
-    margin: auto;
+    max-width: 80%;
+    margin: auto; /*pone el section en el centro*/
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
+    margin-top: 2em;
+}
+.group *{
+    margin: auto; /*pone todo el contenido del section ingredientes en el centro del section*/
+}
+.group ul{
+    list-style: none;
+    display: flex;
+}
+.group li{
+    margin-right: 1em;
+}
+.sangria{
+    text-indent: 6.8em;
 }
 .intro{
     background-color: #fff9f9;
-    max-width: 45%;
+    max-width: 60%;
     border-radius: 4px;
     padding-top: 20px;
-    padding-bottom: 200px;
+    padding-bottom: 20px;
     padding-left: 100px;
     padding-right: 100px;
     margin: auto; /*pone el section en el medio*/
+    overflow: hidden;
 }
 .left{
     margin-top: 2em;
@@ -124,6 +142,22 @@ section p{
 .linea{
     border: 2px solid #e2e2e2;
 }
+footer{
+    width: 100%;
+    margin-top: 2em;
+    margin: auto;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    text-align: center;
+    font-family: source-sans-pro, "Trebuchet MS", Helvetica, sans-serif;;
+}
+main{
+    padding: 5em;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    background-image: url('https://img.hellofresh.com/c_fit,f_auto,fl_lossy,h_1100,q_50,w_2600/hellofresh_s3/image/HF_Y24_R12_W45_ES_ESVCLV27677-2_Main_high-3ef9776b.jpg');
+}
 /* --------------------------------------
     Media Queries para hacerlo responsive
 -------------------------------------- */
@@ -135,6 +169,10 @@ section p{
         flex-direction: column;
         align-items: center;
         padding-top: 1em;
+    }
+
+    body p,li{
+        font-size: 0.75em;
     }
 
     header img {
@@ -151,6 +189,7 @@ section p{
     header li {
         margin-right: 0;
         margin-bottom: 10px;
+        font-size: 1.2em;
     }
     .container{
         margin-bottom: 14em;
@@ -180,6 +219,26 @@ section p{
 /* Para dispositivos más pequeños, como teléfonos con pantallas de hasta 480px */
 @media screen and (max-width: 480px) {
     /* Header: Cambiar la imagen y el menú para pantallas muy pequeñas */
+
+    .intro p,li{
+        font-size: 0.5em;
+    }
+    .intro h1{
+        width: 200%;
+        font-size: 1em;
+    }
+    .intro h1, p, .linea{
+        margin-left: -50px;
+    }
+    .intro{
+        width: 40%;  /*me quede aquí, una posibilidad es poner el .intro como la clase group que no da problemas*/
+    }
+
+    .linea{
+        width: 200%;
+        margin-left: -50%;
+    }
+
     header img {
         width: 70px;
     }
@@ -194,7 +253,6 @@ section p{
     .container{
         margin-bottom: 12em;
     }
-
     /* Ajustar el formulario .enter y .comida para pantallas muy pequeñas */
     .enter {
         max-width: 90%;

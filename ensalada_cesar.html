@@ -10,7 +10,6 @@
 <body>
     <header>
         <a href="index.html"><img src="Designer.png" alt=""></a>
-        <a href=""></a>
         <ul>
             <li><a href="entrantes.html">Entrantes</a></li>
             <li><a href="carnes.html">Carnes</a></li>
@@ -19,25 +18,86 @@
         </ul>
     </header>
     <div class="container"></div>
-    <section class="enter">
-        <h1>Descubre el chef que llevas dentro</h1>
-        <p>Encuentra platos ricos y saludables a cargo de nuestros mejores chefs!</p>
-        <p>Kits de recetas para no perder tu tiempo y comer sano</p>
-        <p>Recetas fáciles y deliciosas</p>
-        <a href="sugerencias.html">Suscríbete</a>
-    </section>
-    <section class="intro">
-            <h1>Ensalada Cesar con Pollo y salsa César Casera</h1>
-            <div class="linea">
-                <div class="left">La ensalada César es un plato clásico que combina lechuga romana, crutones, queso parmesano y una salsa cremosa hecha con ajo, aceite de oliva, jugo de limón y anchoas. Su sabor fresco y salado la convierte en una opción popular, tanto como acompañamiento como plato principal, especialmente cuando se le añaden proteínas como pollo o camarones.</div>
-                <div class="right">
-                    <b>Tiempo total: </b> <p>5 minutos</p>
-                    <b>Tiempo de elaboracion: </b> <p>5 minutos</p>
-                    <p><b>Dificultad: </b> Fácil</p>
-                    <p><b>Tiempo total: </b>5 minutos</p>
+    <main>
+        <section class="intro">
+                <h1>Ensalada Cesar con Pollo y salsa César Casera</h1>
+                <div class="linea"></div>
+                    <div class="left">
+                        <p>La ensalada César es un plato clásico que combina lechuga romana, crutones, queso parmesano y una salsa cremosa hecha con ajo, aceite de oliva, jugo de limón y anchoas. Su sabor fresco y salado la convierte en una opción popular, tanto como acompañamiento como plato principal, especialmente cuando se le añaden proteínas como pollo o camarones.</p>
+                    </div>
+                    <div class="right">
+                        <p><b>Tiempo total: </b></p> <p>5 minutos</p>
+                        <p><b>Tiempo de elaboracion: </b></p> <p>5 minutos</p>
+                        <p><b>Dificultad: </b> Fácil</p>
+                        <p><b>Tiempo total: </b>5 minutos</p>
+                    </div>
                 </div>
-            </div>
-            
+                
+        </section>
+    </main>
+    <section class="group">
+        <h1>Valores nutricionales</h1>
+        <br>
+        <p><b>Valor energético (kJ)</b></p>
+        <p>kJ</p>
+        <p><b>Valor energético (kcal)</b></p>
+        <p>kcal</p>
+        <p><b>Grasas</b></p>
+        <p>g</p>
+        <p><b>de las cuales saturadas</b></p>
+        <p>g</p>
+        <p><b>Carbohidratos</b></p>
+        <p>g</p>
+        <p><b>de los cuales azúcares</b></p>
+        <p>g</p>
+        <p><b>Fibra</b></p>
+        <p>g</p>
+        <p><b>Protenínas</b></p>
+        <p>g</p>
+        <p><b>Colesterol</b></p>
+        <p>mg</p>
+        <p><b>Sodio</b></p>
+        <p>mg</p>
     </section>
+    <section class="group">
+        <h1>Ingredientes</h1>
+        <br><!--Para que el siguiente contenido que es el primero no se suba a la derecha y el br es como un elemento entonces lo ocupa y el primero
+        se va a la izquierda, abajo del h1 ingredientes-->
+        <!--Los ingredientes se escriben el primero a la izquierdad, el siguiente a la derecha y así sucesivamente,
+        ya que se situan con un grid de 2 columnas y se rellena la de la izquierda y después la de la derecha
+        porque es todo el contenido del tirón y así se reparte en vez de ser dos display:flex; por separado y por estar en display:grird; hay arriba un br-->
+        <div>
+            <img src="https://img.hellofresh.com/w_96,q_auto,f_auto,c_limit,fl_lossy/hellofresh_s3/ingredient/64d2495a2a63efcc605eb56f-073d7452.jpg" alt="">
+            <p>350g</p>
+            <p>Carnes 1</p>
+        </div>
+        <div>
+            <img src="https://img.hellofresh.com/w_96,q_auto,f_auto,c_limit,fl_lossy/hellofresh_s3/ingredient/64d2495a2a63efcc605eb56f-073d7452.jpg" alt="">
+            <p>350g</p>
+            <p>Carnes 2</p>
+        </div>
+        <div>
+            <img src="https://img.hellofresh.com/w_96,q_auto,f_auto,c_limit,fl_lossy/hellofresh_s3/ingredient/64d2495a2a63efcc605eb56f-073d7452.jpg" alt="">
+            <p>350g</p>
+            <p>Carnes 3</p>
+        </div>
+        <div>
+            <img src="https://img.hellofresh.com/w_96,q_auto,f_auto,c_limit,fl_lossy/hellofresh_s3/ingredient/64d2495a2a63efcc605eb56f-073d7452.jpg" alt="">
+            <p>350g</p>
+            <p>Carnes sdkjfsjkdf</p>
+        </div>
+    </section>
+    <section class="group">
+        <h1>Utensilios</h1>
+        <br>
+        <ul>
+            <li class="sangria">Cuchillo</li>
+            <li>Tenedor</li>
+            <li>Cortador</li>
+        </ul>
+    </section>
+    <footer>
+        <p>&copy; 2024 Recetas Deliciosas. Todos los derechos reservados.</p>
+    </footer>
 </body>
 </html>

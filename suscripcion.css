@@ -11,6 +11,15 @@ body{
     background-color: #ffff;
     background-color: #c9d6ff;
     background: linear-gradient(to right, #e2e2e2, #c9d6ff);
+    background-image: url('https://i.pinimg.com/originals/47/15/6d/47156d8aa470b276c3ee0e4ebf08ff03.jpg');
+    background-size: 150%;
+    /*se pone un background-size cuando se pone más pequeña la ventana la imagen se repite varias veces dependiendo de lo chica que sea la ventana, ni al ampliar o disminuir se descuadre como si fuera solo una imagen*/
+}
+body p,li,label{
+    font-size: 1.2em;
+}
+body input[type="submit"]{
+    font-size: 1em;
 }
 header{
     display: flex;
@@ -110,6 +119,19 @@ input{
 input:hover{
     transform: translateY(-7px);
     transition: 0.5s;
+}
+footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    margin-top: 2em;
+    margin: auto;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    text-align: center;
+    font-family: source-sans-pro, "Trebuchet MS", Helvetica, sans-serif;;
+    background-color: hsla(0, 0%, 100%, .80);
+    box-shadow: 3px 1px 10px #e2e2e2;
 }
 @media screen and (max-width: 768px) {
     /* Ajusta el tamaño del header en pantallas pequeñas */
