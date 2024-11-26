@@ -189,7 +189,7 @@ main{
     header li {
         margin-right: 0;
         margin-bottom: 10px;
-        font-size: 1.2em;
+        font-size: 1.2em; /*QUITAR PARA PONERLO MÁS CHICO, Y VER DESPUÉS COMO SE PUEDE ENCAJAR DE FORMA QUE ESTÉN EN UNA SOLO LINEA COMO EN VISTA DE PC*/
     }
     .container{
         margin-bottom: 14em;
