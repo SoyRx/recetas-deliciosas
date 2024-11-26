@@ -181,15 +181,14 @@ main{
     }
 
     header ul {
-        flex-direction: column;
         margin-top: 1em;
         align-items: center;
     }
 
     header li {
-        margin-right: 0;
+        margin-right: 1em;
         margin-bottom: 10px;
-        font-size: 1.2em; /*QUITAR PARA PONERLO MÁS CHICO, Y VER DESPUÉS COMO SE PUEDE ENCAJAR DE FORMA QUE ESTÉN EN UNA SOLO LINEA COMO EN VISTA DE PC*/
+        font-size: 1.2em;
     }
     .container{
         margin-bottom: 14em;
