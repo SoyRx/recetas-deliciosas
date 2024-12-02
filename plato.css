@@ -106,12 +106,12 @@ section p{
 }
 .intro{
     background-color: #fff9f9;
-    max-width: 60%;
+    width: 60%;
     border-radius: 4px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    padding-left: 100px;
-    padding-right: 100px;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-left: 5%;
+    padding-right: 5%;
     margin: auto; /*pone el section en el medio*/
     overflow: hidden;
 }
@@ -144,7 +144,7 @@ footer{
     font-family: source-sans-pro, "Trebuchet MS", Helvetica, sans-serif;;
 }
 main{
-    padding: 5em; /*se puede poner poner el main del html arriba ya cerrado sin nada dentro,
+    padding: 5%; /*se puede poner poner el main del html arriba ya cerrado sin nada dentro,
                     y todo aparece más o menos bien aunque haya que tocar cosas, y la imagen si se pone sin position: fixed ni absolute se ve pero no llega hacia abajo y hay que
                     ponerla z-index: -1;*/
     background-size: 100%;
@@ -274,19 +274,14 @@ main{
         font-size: 0.5em;
     }
     .intro h1{
-        width: 200%;
         font-size: 1em;
+        margin: auto;
     }
-    .intro h1, p, .linea{
-        margin-left: -50px;
-    }
-    .intro{
-        width: 40%;  /*me quede aquí, una posibilidad es poner el .intro como la clase group que no da problemas*/
-    }
-
     .linea{
-        width: 200%;
-        margin-left: -50%;
+        /*width: 200%;
+        margin-left: -50%; */
+        width: 90%;
+        margin: auto;
     }
 
     .sangria{
@@ -349,18 +344,19 @@ main{
         text-align: center;
     }
     main>.intro{
-        margin-left: -1.6em; /*ver si lo puedo poner en porcentajes en el de la pantalla inicial para que se adapte siempre y no tener que cambiarlo manualmente en cada configuración de pantalla*/
+        width: 70%; /*ver si lo puedo poner en porcentajes en el de la pantalla inicial para que se adapte siempre y no tener que cambiarlo manualmente en cada configuración de pantalla*/
+    }
+    main>.intro>h1{
+        margin: auto;
     }
     .left{
         margin-top: 2em;
-        max-width: 55%;
         display: flex;
         flex-direction: column;
         float: left;
     }
     .right{
         margin-top: 2em;
-        max-width: 0%;
         display: flex;
         flex-direction: column;
         float: right;
