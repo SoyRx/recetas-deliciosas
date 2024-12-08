@@ -168,6 +168,7 @@ footer{
         max-width: 80%; /* Hacemos el formulario aún más ancho en dispositivos muy pequeños */
         padding-left: 15px;
         padding-right: 15px;
+        padding-bottom: 0px;
     }
 
     header img {
@@ -184,4 +185,5 @@ footer{
     .left, .right {
         float: none;
     }
+    
 }
