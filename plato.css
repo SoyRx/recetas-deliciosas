@@ -99,6 +99,11 @@ section p{
     margin-top: 2em;
     text-align: center;
 }
+.ingredientes>div>img{
+    background-color: #ffff;
+    padding: 1em;
+    border-radius: 100px;
+}
 .group *, .ingredientes *{
     margin: auto; /*pone todo el contenido del section ingredientes en el centro del section*/
 }
@@ -195,13 +200,8 @@ main{
     text-align: center;
 }
 .instruccion>img{
-    width: 100% /*hace que la imagen se adecue a la pantalla*/
-}
-.num{
-    background-color: beige;
-    width: 100%;  /*el height: 10%; "queda bien en la pantalla de pc pero se reduce en pantalla más chica"*/
-    /*margin-top: 100px;
-    height: 10%; "si se pone hace falta ponerlo normal en el @media"*/
+    width: 100%; /*hace que la imagen se adecue a la pantalla*/
+    border-radius: 20px;
 }
 .pasos{
     overflow:hidden;

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recetas Deliciosas</title>
+    <link rel="stylesheet" href="plato.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&family=Montserrat:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <a href="index.html"><img src="Designer.png" alt=""></a>
+        <ul>
+            <li><a href="entrantes.html">Entrantes</a></li>
+            <li><a href="carnes.html">Carnes</a></li>
+            <li>Pastas</li>
+            <li>Postres</li>
+        </ul>
+    </header>
+    <div class="container"></div>
+    <main style="background-image: url('https://img.hellofresh.com/c_fit,f_auto,fl_lossy,h_1100,q_50,w_2600/hellofresh_s3/image/HF_Y24_R07_W46_ES_ESCQP23338-3_MAIN_high-80a2473c.jpg');">
+        <section class="intro">
+                <h1>Quesadillas de cerdo con queso de cabra</h1>
+                <div class="linea"></div>
+                <div class="left">
+                    <p>Contrario a lo que se pueda creer, ¡las quesadillas no siempre llevan queso! Esto se debe a que el nombre de este plato deriva de "quetzalli", que significa "tortilla doblada" en náhuatl, una lengua uto-azteca.</p>
+                </div>
+                <div class="right">
+                    <p><b>Tiempo total: </b></p> <p>25 minutos</p>
+                    <p><b>Tiempo de elaboracion: </b></p> <p>15 minutos</p>
+                    <p><b>Dificultad: </b> Fácil</p>
+                </div>      
+        </section>
+    </main>
+    
+    <section class="group">
+        <h1>Valores nutricionales por ración</h1>
+        <br>
+        <p><b>Valor energético (kJ)</b></p>
+        <p>3088 kJ</p>
+        <p><b>Valor energético (kcal)</b></p>
+        <p>738 kcal</p>
+        <p><b>Grasas</b></p>
+        <p>64.1 g</p>
+        <p><b>de las cuales saturadas</b></p>
+        <p>20.3 g</p>
+        <p><b>Carbohidratos</b></p>
+        <p>43.9 g</p>
+        <p><b>de los cuales azúcares</b></p>
+        <p>8.6 g</p>
+        <p><b>Fibra</b></p>
+        <p>2.2 g</p>
+        <p><b>Protenínas</b></p>
+        <p>35.2 g</p>
+        <p><b>Colesterol</b></p>
+        <p>0 mg</p>
+        <p><b>Sodio</b></p>
+        <p>2.57 mg</p>
+    </section>
+    <section class="ingredientes">
+        <h1>Ingredientes</h1>
+        <br><!--Para que el siguiente contenido que es el primero no se suba a la derecha y el br es como un elemento entonces lo ocupa y el primero
+        se va a la izquierda, abajo del h1 ingredientes-->
+        <!--Los ingredientes se escriben el primero a la izquierdad, el siguiente a la derecha y así sucesivamente,
+        ya que se situan con un grid de 2 columnas y se rellena la de la izquierda y después la de la derecha
+        porque es todo el contenido del tirón y así se reparte en vez de ser dos display:flex; por separado y por estar en display:grird; hay arriba un br-->
+
+        <div>
+            <img src="https://img.hellofresh.com/w_96,q_auto,f_auto,c_limit,fl_lossy/hellofresh_s3/ingredient/6348219ebb36093c54997964-b206a868.jpg" alt="Jamoncitos">
+            <p>6 unidad(es)</p>
+            <p>Tortillas de trigo</p>
+        </div>
+        <div>
+            <img src="https://img.hellofresh.com/w_96,q_auto,f_auto,c_limit,fl_lossy/hellofresh_s3/ingredient/63fc92b0bbe06d8c7489ce76-fa59d398.png" alt="Manzana">
+            <p>250 gramo(s)</p>
+            <p>Carne de cerdo picada</p>
+        </div>
+        <div>
+            <img src="https://img.hellofresh.com/w_96,q_auto,f_auto,c_limit,fl_lossy/hellofresh_s3/ingredient/635bdce25ebcac2718d2feda-bbec7b21.png" alt="Cebolla">
+            <p>1 paquete</p>
+            <p>Rulo de queso de cabra</p>
+        </div>
+        <div>
+            <img src="https://img.hellofresh.com/w_96,q_auto,f_auto,c_limit,fl_lossy/hellofresh_s3/ingredient/63404374233160a36674ba12-d5c5f2e3.jpg" alt="Tomates secos">
+            <p>1 unidad(es)</p>
+            <p>Cebolla</p>
+        </div>
+        <div>
+            <img src="https://img.hellofresh.com/w_96,q_auto,f_auto,c_limit,fl_lossy/hellofresh_s3/ingredient/6340436d2268bc1bff0d3ca5-26c78459.png" alt="Pimineto verde italiano">
+            <p>250 gramo(s)</p>
+            <p>Tomate cherry</p>
+        </div>
+        <div>
+            <img src="https://img.hellofresh.com/w_96,q_auto,f_auto,c_limit,fl_lossy/hellofresh_s3/ingredient/634d1b67971d5eddb3ff71bc-84c5c7f6.jpg" alt="Pimineto verde italiano">
+            <p>50 gramo(s)</p>
+            <p>Rúcula</p>
+        </div>
+    </section>
+    <section class="utensilios">
+        <h1>Utensilios</h1>
+        <br>
+        <ul>
+            <li class="sangria">Sartén</li>
+            <li>Espátula</li>
+            <li>Bandeja de horno con papel de horno</li>
+            <li>Pincel de silicona</li>
+            <li>Ensaladera</li>
+        </ul>
+    </section>
+    <section class="instrucciones">
+        <h1>Instrucciones</h1>
+        <div class="instruccion">
+            <img src="https://img.hellofresh.com/w_384,q_auto,f_auto,c_limit,fl_lossy/hellofresh_s3/66e1440ca3dfaa8a349ab654/step-675c3c00.jpg" alt="">
+            <p>1</p>
+            <p class="pasos">Precalienta el horno a 220ºC. Pela la cebolla, divídela en dos y córtala en tiras finas. En una sartén, calienta un chorrito de aceite a fuego medio-alto. Agrega la cebolla y sal y cocina 2-3 min. Luego, añade el azúcar (ver cantidad en ingredientes) y cocina a fuego medio-bajo 5-6 min más, removiendo, hasta que quede blanda. Retira y reserva.</p>
+        </div>
+        <div class="instruccion">
+            <img src="https://img.hellofresh.com/w_384,q_auto,f_auto,c_limit,fl_lossy/hellofresh_s3/66e1440ca3dfaa8a349ab654/step-7f2bf010.jpg" alt="">
+            <p>2</p>
+            <p class="pasos">En la sartén, calienta un chorrito de aceite a fuego medio-alto. Una vez caliente, agrega la carne de cerdo y cocina 3-4 min, desmenuzando con ayuda de una espátula, hasta que se dore. Salpimienta al gusto y reserva fuera de la sartén.</p>
+        </div>
+        <div class="instruccion">
+            <img src="https://img.hellofresh.com/w_384,q_auto,f_auto,c_limit,fl_lossy/hellofresh_s3/66e1440ca3dfaa8a349ab654/step-cfd11c20.jpg" alt="">
+            <p>3</p>
+            <p class="pasos">Corta los tomates cherry por la mitad. Pela y ralla el ajo (ver cantiad en ingredientes). En la sartén, agrega un chorrito generoso de aceite y el ajo. Calienta a fuego medio y cocina 1-2 min. Luego, añade los tomates cherry, salpimienta y cocina 5-6 min, removiendo y aplastando ligeramente con la espátula para que suelte los jugos.</p>
+        </div>
+        <div class="instruccion">
+            <img src="https://img.hellofresh.com/w_384,q_auto,f_auto,c_limit,fl_lossy/hellofresh_s3/66e1440ca3dfaa8a349ab654/step-a01aca30.jpg" alt="">
+            <p>4</p>
+            <p class="pasos">En la sartén, añade de nuevo la carne de cerdo y mezcla bien. Prueba y rectifica de sal y pimienta. Desmenuza el queso de cabra con las manos en trozos medianos. Coloca las tortillas de trigo en una bandeja de horno con papel de horno y cubre con la carne con tomates cherry y el queso de cabra sobre la mitad de cada tortilla.</p>
+        </div>
+        <div class="instruccion">
+            <img src="https://img.hellofresh.com/w_384,q_auto,f_auto,c_limit,fl_lossy/hellofresh_s3/66e1440ca3dfaa8a349ab654/step-4532c740.jpg" alt="">
+            <p>5</p>
+            <p class="pasos">
+                Sobre la carne picada con tomates cherry, añade la cebolla caramelizada al gusto. Luego, cierra las quesadillas por la mitad y pinta la superficie con aceite con un pincel de cocina. Luego, hornea 6 min, hasta que se doren y el queso se derrita.</p>
+        </div>
+        <div class="instruccion">
+            <img src="https://img.hellofresh.com/w_384,q_auto,f_auto,c_limit,fl_lossy/hellofresh_s3/66e1440ca3dfaa8a349ab654/step-e7e6b650.jpg" alt="">
+            <p>6</p>
+            <p class="pasos">En una ensaladera, añade el vinagre de vino tinto (ver cantidad en ingredientes), un chorrito de aceite, sal y pimienta. Mezcla bien, luego, añade la rúcula y mezcla de nuevo. Sirve las quesadillas de cerdo con cebolla caramelizada y queso de cabra en platos y acompaña con la ensalada.</p>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2024 Recetas Deliciosas. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

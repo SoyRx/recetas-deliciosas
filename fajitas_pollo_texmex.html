@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recetas Deliciosas</title>
+    <link rel="stylesheet" href="plato.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&family=Montserrat:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <a href="index.html"><img src="Designer.png" alt=""></a>
+        <ul>
+            <li><a href="entrantes.html">Entrantes</a></li>
+            <li><a href="carnes.html">Carnes</a></li>
+            <li>Pastas</li>
+            <li>Postres</li>
+        </ul>
+    </header>
+    <div class="container"></div>
+    <main style="background-image: url('https://img.hellofresh.com/c_fit,f_auto,fl_lossy,h_1100,q_50,w_2600/hellofresh_s3/image/HF_Y23_R03_W11_ES_ESCQC13703-2_Main_2_high-fefb58e7.jpg');">
+        <section class="intro">
+                <h1>Fajitas de pollo al estilo Tex-Mex</h1>
+                <div class="linea"></div>
+                <div class="left">
+                    <p>Podrás rellenar tu tortilla con más carne si prefieres más proteína o más verdura si no quieres tanto pollo, así como acabarte el guacamole si eres fan del toque fresco que le aporta.</p>
+                </div>
+                <div class="right">
+                    <p><b>Tiempo total: </b></p> <p>25 minutos</p>
+                    <p><b>Tiempo de elaboracion: </b></p> <p>25 minutos</p>
+                    <p><b>Dificultad: </b> Fácil</p>
+                </div>      
+        </section>
+    </main>
+    
+    <section class="group">
+        <h1>Valores nutricionales por ración</h1>
+        <br>
+        <p><b>Valor energético (kJ)</b></p>
+        <p>2517 kJ</p>
+        <p><b>Valor energético (kcal)</b></p>
+        <p>602 kcal</p>
+        <p><b>Grasas</b></p>
+        <p>36.6 g</p>
+        <p><b>de las cuales saturadas</b></p>
+        <p>7 g</p>
+        <p><b>Carbohidratos</b></p>
+        <p>50.2 g</p>
+        <p><b>de los cuales azúcares</b></p>
+        <p>9.9 g</p>
+        <p><b>Fibra</b></p>
+        <p>8.8 g</p>
+        <p><b>Protenínas</b></p>
+        <p>37.2 g</p>
+        <p><b>Colesterol</b></p>
+        <p>0 mg</p>
+        <p><b>Sodio</b></p>
+        <p>2.3 mg</p>
+    </section>
+    <section class="ingredientes">
+        <h1>Ingredientes</h1>
+        <br><!--Para que el siguiente contenido que es el primero no se suba a la derecha y el br es como un elemento entonces lo ocupa y el primero
+        se va a la izquierda, abajo del h1 ingredientes-->
+        <!--Los ingredientes se escriben el primero a la izquierdad, el siguiente a la derecha y así sucesivamente,
+        ya que se situan con un grid de 2 columnas y se rellena la de la izquierda y después la de la derecha
+        porque es todo el contenido del tirón y así se reparte en vez de ser dos display:flex; por separado y por estar en display:grird; hay arriba un br-->
+
+        <div>
+            <img src="https://img.hellofresh.com/w_96,q_auto,f_auto,c_limit,fl_lossy/hellofresh_s3/ingredient/6340437b2268bc1bff0d3cd1-b2d195de.jpg" alt="">
+            <p>250 gramo(s)</p>
+            <p>Pechuga de pollo troceada</p>
+        </div>
+        <div>
+            <img src="https://img.hellofresh.com/w_96,q_auto,f_auto,c_limit,fl_lossy/hellofresh_s3/ingredient/63404376233160a36674ba1b-edfe8b42.png" alt="">
+            <p>1 unidad(es)</p>
+            <p>Pimiento rojo</p>
+        </div>
+        <div>
+            <img src="https://img.hellofresh.com/w_96,q_auto,f_auto,c_limit,fl_lossy/hellofresh_s3/ingredient/6348219ebb36093c54997964-b206a868.jpg" alt="">
+            <p>6 unidad(es)</p>
+            <p>Tortillas de trigo</p>
+        </div>
+        <div>
+            <img src="https://img.hellofresh.com/w_96,q_auto,f_auto,c_limit,fl_lossy/hellofresh_s3/ingredient/63404377233160a36674ba1c-3dbc439a.jpg" alt="">
+            <p>1 unidad(es)</p>
+            <p>Cebolla roja</p>
+        </div>
+        <div>
+            <img src="https://img.hellofresh.com/w_96,q_auto,f_auto,c_limit,fl_lossy/hellofresh_s3/ingredient/6340437341033266d7be9522-d9c955a9.jpg" alt="">
+            <p>1 unidad(es)</p>
+            <p>Lima</p>
+        </div>
+        <div>
+            <img src="https://img.hellofresh.com/w_96,q_auto,f_auto,c_limit,fl_lossy/hellofresh_s3/ingredient/63404373233160a36674ba0f-1bee6cb8.png" alt="">
+            <p>1 sobre(s)</p>
+            <p>Mix de especias mexicanas</p>
+        </div>
+        <div>
+            <img src="https://img.hellofresh.com/w_96,q_auto,f_auto,c_limit,fl_lossy/hellofresh_s3/ingredient/6340436b2268bc1bff0d3ca1-af2b6873.jpg" alt="">
+            <p>1 unidad(es)</p>
+            <p>Aguacate</p>
+        </div>
+    </section>
+    <section class="utensilios">
+        <h1>Utensilios</h1>
+        <br>
+        <ul>
+            <li class="sangria">Sartén</li>
+            <li>Espátula</li>
+            <li>Bandeja de horno con papel de horno</li>
+            <li>Pincel de silicona</li>
+            <li>Ensaladera</li>
+        </ul>
+    </section>
+    <section class="instrucciones">
+        <h1>Instrucciones</h1>
+        <div class="instruccion">
+            <img src="https://img.hellofresh.com/w_384,q_auto,f_auto,c_limit,fl_lossy/hellofresh_s3/6705036680e0838ac4adf3f5/step-694e0c00.jpg" alt="">
+            <p>1</p>
+            <p class="pasos">Pela y pica el ajo (ver cantidad en ingredientes). Corta el pimiento por la mitad y quítale las semillas. Córtalo en tiras finas de 1 cm de grosor. Pela la cebolla, divídela en dos y córtala en tiras finas.</p>
+        </div>
+        <div class="instruccion">
+            <img src="https://img.hellofresh.com/w_384,q_auto,f_auto,c_limit,fl_lossy/hellofresh_s3/6705036680e0838ac4adf3f5/step-49069510.jpg" alt="">
+            <p>2</p>
+            <p class="pasos">En una sartén, calienta un chorrito de aceite a fuego medio. Una vez caliente, agrega el pollo y las especias mexicanas, salpimienta y cocina 4-5 min, hasta que se dore. Retira de la sartén y reserva.</p>
+        </div>
+        <div class="instruccion">
+            <img src="https://img.hellofresh.com/w_384,q_auto,f_auto,c_limit,fl_lossy/hellofresh_s3/6705036680e0838ac4adf3f5/step-d0efac20.jpg" alt="">
+            <p>3</p>
+            <p class="pasos">En la sartén, añade un chorrito de aceite y el ajo. Calienta a fuego medio y cocina 1-2 min. Luego, agrega la cebolla y el pimiento, salpimienta y cocina a fuego medio 5-6 min, hasta que se ablanden. Añade el pollo y cocina todo junto 1 min más. Cuando todo esté cocinado, reserva en un bol grande.</p>
+        </div>
+        <div class="instruccion">
+            <img src="https://img.hellofresh.com/w_384,q_auto,f_auto,c_limit,fl_lossy/hellofresh_s3/6705036680e0838ac4adf3f5/step-1716d730.jpg" alt="">
+            <p>4</p>
+            <p class="pasos">Corta el aguacate por la mitad y retira el hueso. Saca la pulpa, agrégala a un bol y aplasta con un tenedor. En el bol, exprime un cuarto de la lima (doble para 4p) y añade sal y pimienta. Mezcla bien hasta que el guacamole quede homogéneo y suave. Corta el resto de la lima en gajos.</p>
+        </div>
+        <div class="instruccion">
+            <img src="https://img.hellofresh.com/w_384,q_auto,f_auto,c_limit,fl_lossy/hellofresh_s3/6705036680e0838ac4adf3f5/step-8503e440.jpg" alt="">
+            <p>5</p>
+            <p class="pasos">Extiende las tortillas de trigo en un plato y caliéntalas en el microondas a máxima potencia durante 30 segundos. Puedes calentarlas en una sartén si lo prefieres.</p>
+        </div>
+        <div class="instruccion">
+            <img src="https://img.hellofresh.com/w_384,q_auto,f_auto,c_limit,fl_lossy/hellofresh_s3/6705036680e0838ac4adf3f5/step-16d71250.jpg" alt="">
+            <p>6</p>
+            <p class="pasos">Coloca las tortillas mexicanas en un plato. Sirve junto al bol con guacamole y el bol grande con la mezcla de pollo y verduras. Sirve los gajos de lima a un lado. Coloca un plato por persona y monta las fajitas a tu gusto, añadiendo sobre la tortilla la cantidad de pollo, verduras y guacamole que prefieras.</p>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2024 Recetas Deliciosas. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
